@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bitácora: registra tus viajes, pinta los países que conoces y comparte tus historias.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath d='M15 2c-5.5 0-10 4.3-10 9.7C5 19 15 28 15 28s10-9 10-16.3C25 6.3 20.5 2 15 2z' fill='%23ff5a4e'/%3E%3Ccircle cx='15' cy='11.5' r='4' fill='%23fff'/%3E%3C/svg%3E">
+<title>Bitácora de viajes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="3"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 13h18"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M12 8v8M8 12h8"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c1-3.5 3.6-5.5 6.5-5.5s5.5 2 6.5 5.5M16 4.5a3.5 3.5 0 0 1 0 7M18 14.8c1.8.7 3 2.4 3.5 5.2"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-9.3-9.4A4.9 4.9 0 0 1 12 7a4.9 4.9 0 0 1 9.3 3.6C19.5 15.4 12 20 12 20z"/></symbol>
+  <symbol id="i-cmt" viewBox="0 0 24 24"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20.5l1.6-4.8a8.5 8.5 0 1 1 15.9-4.2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H16a3 3 0 0 0 0-6H8a3 3 0 0 1 0-6h7.5"/></symbol>
+  <symbol id="i-multi" viewBox="0 0 24 24"><rect x="7" y="7" width="14" height="14" rx="2"/><path d="M17 4H5a1 1 0 0 0-1 1v12"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
+  <symbol id="i-cam" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+  <symbol id="i-road" viewBox="0 0 24 24"><path d="M7 21 10 3M17 21 14 3M12 6v2M12 11v2M12 16v2"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+</svg>
+
+<aside class="side">
+  <div class="logo">Bitácora</div>
+  <div class="mini"><svg class="i"><use href="#i-globe"/></svg></div>
+  <button class="nav" data-a="go" data-v="home"><svg class="i"><use href="#i-home"/></svg><span>Inicio</span></button>
+  <button class="nav" data-a="go" data-v="trips"><svg class="i"><use href="#i-bag"/></svg><span>Viajes</span></button>
+  <button class="nav" data-a="create"><svg class="i"><use href="#i-plus"/></svg><span>Crear</span></button>
+  <button class="nav" data-a="conns"><svg class="i"><use href="#i-users"/></svg><span>Conexiones</span></button>
+  <button class="nav" data-a="go" data-v="profile"><svg class="i"><use href="#i-user"/></svg><span>Perfil</span></button>
+  <div class="acct"><label for="who">Cambiar de cuenta (demo)</label><select id="who"></select></div>
+</aside>
+<div class="top"><div class="logo">Bitácora</div><button data-a="conns" aria-label="Conexiones"><svg class="i"><use href="#i-users"/></svg></button></div>
+
+<main>
+  <section id="mapblock">
+    <div class="hello"><h1 id="hi"></h1><span class="lvl" id="lvl"></span></div>
+    <div class="mapcard">
+      <svg id="world" viewBox="0 0 360 161" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mapa de los países que conoces"><g id="dots"></g><g id="pins"></g></svg>
+      <div class="tip" id="tip" role="status"></div>
+      <div class="zoom"><button data-a="zin" aria-label="Acercar">+</button><button data-a="zout" aria-label="Alejar">−</button><button data-a="zreset" aria-label="Ver el mundo"><svg class="i" style="width:18px;height:18px"><use href="#i-globe"/></svg></button></div>
+      <div class="banner" id="banner"><span>Toca el mapa donde está el lugar</span><button data-a="cancelPick">Cancelar</button></div>
+      <div class="legend"><span><b style="background:var(--coral)"></b>Ya lo conoces</span><span><b style="background:var(--land)"></b>Por descubrir</span></div>
+    </div>
+    <div id="prog"></div>
+    <div id="mcard"></div>
+  </section>
+  <div id="content"></div>
+</main>
+
+<nav class="bottom">
+  <button data-a="go" data-v="home" aria-label="Inicio"><svg class="i"><use href="#i-home"/></svg></button>
+  <button data-a="go" data-v="trips" aria-label="Viajes"><svg class="i"><use href="#i-bag"/></svg></button>
+  <button data-a="create" aria-label="Crear"><svg class="i"><use href="#i-plus"/></svg></button>
+  <button data-a="go" data-v="profile" aria-label="Perfil"><svg class="i"><use href="#i-user"/></svg></button>
+</nav>
+<div class="ov" id="ov"><div class="modal" id="modal" role="dialog" aria-modal="true"></div></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
